@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.header, .bg-blue-800, .bg-blue-900, .bg-blue-700, .bg-blue-500 {
+    background-color: #1D4ED8; /* Blue-700 */
+}
+
+.header a, .header button, .header nav a, .bg-blue-800 a, .bg-blue-900 h1, .bg-blue-900 p, .bg-blue-900 a, .bg-blue-900 h2, .bg-blue-700 h2, .bg-blue-700 p, .bg-blue-800 h2, .bg-blue-800 p, .bg-blue-800 h3, .bg-blue-800 h4, .bg-blue-700 h3, .bg-blue-800 p, .bg-blue-700 p, .bg-blue-700 h3 {
+    color: #E0F2FE; /* Light Blue-100 */
+}
+
+.bg-blue-500:hover, .bg-blue-700:hover, .bg-blue-900:hover, .bg-blue-800:hover {
+    background-color: #1E40AF; /* Blue-800 */
+}
+
+button {
+    background-color: #3B82F6; /* Blue-400 */
+}
+
+button:hover {
+    background-color: #2563EB; /* Blue-500 */
+}
+
+input, textarea {
+    background-color: #E5E7EB; /* Cool Gray-200 */
+}
+
+input:focus, textarea:focus {
+    background-color: #FFFFFF; /* White */
+    border-color: #93C5FD; /* Blue-300 */
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.5s forwards;
+}
+
+.slide-out-left {
+    animation: slide-out-left 0.5s forwards;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Add the following styles to your CSS file or within a <style> block */
+
+@media (max-width: 768px) {
+    #menu.hidden {
+        display: none;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    #menu {
+        display: flex !important;
+    }
+}
+
+
+footer {
+    background-color: #1E40AF; /* Tailwind CSS blue-600 */
+    color: #F3F4F6; /* Tailwind CSS gray-100 */
+    padding: 1.5rem 0; /* 6 in Tailwind spacing scale */
+    text-align: center;
+}
+footer a {
+    color: #F3F4F6; /* Tailwind CSS gray-100 */
+}
+footer a:hover {
+    color: #9CA3AF; /* Tailwind CSS gray-400 */
+}
